@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+ 
+  .valentines-day {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Sacramento', cursive;
+  background-color: #000000;
+  overflow: hidden;
+  margin: 0; /* Elimina márgenes del body */
+}
+
+.valentines-day {
+  position: relative;
+  cursor: pointer;
+  /* Añadir un margen para el centrado vertical en pantallas pequeñas */
+  margin: auto; 
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+ .valentines-day {
+   position: fixed; /* Asegúrate de que se mantenga centrado */
+   top: 50%; /* Centra verticalmente */
+   left: 50%; /* Centra horizontalmente */
+   transform: translate(-50%, -50%); /* Ajusta para el centrado exacto */
+ }
+}
+
+ 
+ .partAtras {
+   position: relative;
+   filter: drop-shadow(0 0 25px rgba(255, 0, 81, 0.3));
+ }
+ 
+ .partAtras:before {
+   content:"";
+   position: absolute;
+   width:254px;
+   height:254px;
+   background-color: #ff007b;
+   transform: rotate(-45deg);
+   border-radius: 0 15px 0 0;
+   left:-37px;
+   top:-82px;
+   filter: drop-shadow(0 0 20px #ff007b);
+
+ }
+ 
+ .partAtras:after {
+   content:"";
+   position: absolute;
+   background-color: #ff007b;
+   width:360px;
+   height:225px;
+   left:-90px;
+   top:45px;
+   filter: drop-shadow(0 0 20px #ff007b);
+
+ }
+ 
+ .corazon {
+   position: relative;
+   background-color: #ff0000;
+   display: inline-block;
+   height: 180px;
+   top:50px;
+   left:0;
+   transform: rotate(-45deg);
+   width:180px;
+   filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+   transition: .5s;
+ }
+   
+ .corazon:before, .corazon:after {
+   content:"";
+   background-color: #ff0000;
+   border-radius:50%;
+   height: 180px;
+   width: 180px;
+   position: absolute;
+   }
+   
+ .corazon:before {
+   top:-100px;
+   left:0;}
+   
+ .corazon:after {
+   left:100px;
+   top:0;}
+ 
+ .front {
+   position: absolute;
+   width:0;
+   height:0;
+   border-right: 190px solid #ff007b;
+   border-top: 113px solid transparent;
+   border-bottom: 113px solid transparent;
+   top:44px;
+   left:80px;
+   z-index:4;
+ }
+ 
+ .front:before {
+   content:"";
+   position: absolute;
+   width:0;
+   height:0;
+   border-left: 190px solid #ff007b;
+   border-top: 113px solid transparent;
+   border-bottom: 113px solid transparent;
+   top:-113px;
+   left:-170px;
+ }
+ 
+ .front:after {
+   width:0;
+   height:0;
+   position: absolute;
+   content:"";
+   border-bottom: 150px solid #ff6aa5;
+   border-right:180px solid transparent;
+   border-left: 180px solid transparent;
+   top:-36px;
+   left:-170px;
+ }
+ 
+ .text {
+   position: absolute;
+   font-family: 'Times New Roman', Times, serif;
+   letter-spacing:5px;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   z-index:2;
+   top:30%;
+   left:17%;
+   transition: .5s;
+   filter: drop-shadow(0 0 5px rgb(255, 0, 106));
+   font-weight: bold;
+ }
+ 
+ .valentines-day:hover .corazon {
+   transform: translateY(-50px) rotate(-45deg);
+ }
+ 
+ .valentines-day:hover .text {
+   transform: translateY(-50px);
+ }
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+
+  .text {
+      font-size: 1em; /* Ajuste del tamaño de fuente */
+  }
+}
+
+
